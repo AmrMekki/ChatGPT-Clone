@@ -1,9 +1,11 @@
-const  App= () => {
-  return <div className="app">
-    <section class="side-bar">
+
+const App = () => {
+  return (
+    <div className="app">
+      <section class="side-bar">
       <button>+ New chat</button>
       <ul class="history"></ul>
-      <nav> 
+      <nav>
         <p>Made by Mekki</p>
       </nav>
     </section>
@@ -22,7 +24,8 @@ const  App= () => {
         us improve.
       </p>
     </section>
-  </div>;
+    </div>
+  );
 }
 
 export default App;

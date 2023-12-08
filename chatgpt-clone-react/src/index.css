@@ -8,18 +8,15 @@
 body {
   margin: 0;
   padding: 0;
-}
-
-.app {
   background-color: #343541;
   display: flex;
 }
 
-/* h1 {
+h1 {
   font-size: 33px;
   font-weight: 600;
   padding: 200px 0;
-} */
+}
 
 .side-bar {
   background-color: #202123;
@@ -103,8 +100,9 @@ nav {
   display: flex;
   flex-direction: column;
   height: 100%;
+
 }
 
 .history p {
-  cursor: pointer;
+    cursor: pointer;
 }
