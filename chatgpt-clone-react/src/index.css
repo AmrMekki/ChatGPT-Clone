@@ -8,6 +8,9 @@
 body {
   margin: 0;
   padding: 0;
+}
+
+.app {
   background-color: #343541;
   display: flex;
 }
@@ -100,9 +103,11 @@ nav {
   display: flex;
   flex-direction: column;
   height: 100%;
-
 }
 
-.history p {
-    cursor: pointer;
+.history li {
+  list-style-type: none;
+  padding: 15px 0;
+  cursor: pointer;
 }
+

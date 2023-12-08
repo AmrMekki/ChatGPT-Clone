@@ -11,7 +11,9 @@ const App = () => {
     </section>
     <section class="main">
       <h1>MekkiGPT</h1>
-      <p id="output"></p>
+      <ul className="feed">
+        
+      </ul>
       <div class="bottom-section">
         <div class="input-container">
           <input type="text" />
