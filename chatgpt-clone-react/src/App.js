@@ -1,26 +1,49 @@
 
+
 const App = () => {
+
+  const getMessages = async () => {
+
+    const options = {
+      method: "POST",
+      body: JSON.stringify({
+        message: "hello how are you?"
+      }),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    }
+
+    try{
+      const response = await fetch("http://localhost:8000/completions", options);
+      const data = await response.json();
+      console.log(data);
+    } catch (error){
+      console.log(error);
+    }
+  }
+
   return (
     <div className="app">
-      <section class="side-bar">
+      <section className="side-bar">
       <button>+ New chat</button>
-      <ul class="history"></ul>
+      <ul className="history"></ul>
       <nav>
         <p>Made by Mekki</p>
       </nav>
     </section>
-    <section class="main">
+    <section className="main">
       <h1>MekkiGPT</h1>
       <ul className="feed">
         
       </ul>
-      <div class="bottom-section">
-        <div class="input-container">
+      <div className="bottom-section">
+        <div className="input-container">
           <input type="text" />
-          <div id="submit">➤</div>
+          <div id="submit" onClick={getMessages}>➤</div>
         </div>
       </div>
-      <p class="info">
+      <p className="info">
         Chat GPT Dec 18 Version. Free Research Preview. Our goal is to make AI
         systems more natural and safe to interact with. Your feedback will help
         us improve.
