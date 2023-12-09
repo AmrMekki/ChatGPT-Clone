@@ -15,11 +15,11 @@ body {
   display: flex;
 }
 
-h1 {
+/* h1 {
   font-size: 33px;
   font-weight: 600;
   padding: 200px 0;
-}
+} */
 
 .side-bar {
   background-color: #202123;
@@ -111,3 +111,26 @@ nav {
   cursor: pointer;
 }
 
+.feed {
+  overflow: scroll;
+  width: 100%;
+  padding: 0;
+}
+
+.feed li {
+  display: flex;
+  background-color: #444654;
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.feed p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  text-align: left;
+}
+
+.feed p.role {
+  min-width: 100px;
+}
